@@ -4,46 +4,45 @@ public class Histogram {
 
     int[] numbers = new int[10];
     int[] stars = new int[10];
-    int count = 0;
 
-    for (int  i = 1; i < numbers.length; i++) {
+    for (int  i = 0; i < numbers.length; i++) {
         numbers[i] = (int) ((Math.random()*100)+1);
 
         if (numbers[i] < 11){
-            stars[0] = count++;
+            stars[0]++;
         }
         else if (10 < numbers[i] && numbers[i] < 21){
-            stars[1] = count++;
+            stars[1]++;
         }
 
         else if (21 < numbers[i] && numbers[i] < 31){
-            stars[2] = count++;
+            stars[2]++;
         }
 
         else if (31 < numbers[i] && numbers[i] < 41){
-            stars[3] = count++;
+            stars[3]++;
         }
 
         else if (41 < numbers[i] && numbers[i] < 51){
-            stars[4] = count++;
+            stars[4]++;
         }
 
         else if (51 < numbers[i] && numbers[i] < 61){
-            stars[5] = count++;
+            stars[5]++;
         }
 
         else if (61 < numbers[i] && numbers[i] < 71){
-            stars[6] = count++;
+            stars[6]++;
         }
 
         else if (71 < numbers[i] && numbers[i] < 81){
-            stars[7] = count++;
+            stars[7]++;
         }
         else if (81 < numbers[i] && numbers[i] < 91){
-            stars[8] = count++;
+            stars[8]++;
         }
         else if (91 < numbers[i] && numbers[i] < 100){
-            stars[9] = count++;
+            stars[9]++;
         }
 
 
