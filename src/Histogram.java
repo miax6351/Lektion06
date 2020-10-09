@@ -2,7 +2,7 @@ public class Histogram {
 
     public static void main(String[] args) {
 
-    int[] numbers = new int[10];
+    int[] numbers = new int[100];
     int[] stars = new int[10];
 
     for (int  i = 0; i < numbers.length; i++) {
@@ -45,7 +45,6 @@ public class Histogram {
             stars[9]++;
         }
 
-
     }
 
         int value = 1;
@@ -54,7 +53,7 @@ public class Histogram {
             // "?" tjekker, og den efterfølgende statement viser 'if' / hvad den skal gøre
             // og efter ":" else
             System.out.print((value == 1) ? value + " " : value);
-            System.out.print(" - " + (value+9) + " ");
+            System.out.print(((value+9) > 1 && (value + 9) < 100) ? " - " + (value + 9) + "  " : " - " + (value+9) + " ");
             System.out.print((value == 100) ? "" : " ");
 
             for (int star = 0; star < stars[t]; star++){
