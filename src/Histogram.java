@@ -53,8 +53,8 @@ public class Histogram {
             // "?" tjekker, og den efterfølgende statement viser 'if' / hvad den skal gøre
             // og efter ":" else
             System.out.print((value == 1) ? value + " " : value);
-            System.out.print(((value+9) > 1 && (value + 9) < 100) ? " - " + (value + 9) + "  " : " - " + (value+9) + " ");
-            System.out.print((value == 100) ? "" : " ");
+            System.out.print(((value + 9) > 1 && (value + 9) < 100) ? " - " + (value + 9) + "  | " : " - " + (value+9) + " | ");
+
 
             for (int star = 0; star < stars[t]; star++){
                 System.out.print("*");
